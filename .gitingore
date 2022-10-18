@@ -1,0 +1,8 @@
+.parcel-cache
+.vscode
+dist
+node_modules
+package-lock.json
+package.json
+tsconfig.json
+arkanoid-ts-startHere/node_modules
