@@ -26,23 +26,17 @@ import { createBricks } from "./helpers";
 let gameOver = false;
 let score = 0;
 
-function setGameOver(view: CanvasView) {
+function setGameOver(view) {
   view.drawInfo(`Game Over!`);
   gameOver = false;
 }
 
-function setGameWin(view: CanvasView) {
+function setGameWin(view) {
   view.drawInfo(`Game Won!`);
   gameOver = false;
 }
 
-function gameLoop(
-  view: CanvasView,
-  bricks: Brick[],
-  paddle: Paddle,
-  ball: Ball,
-  collision: Collision
-) {
+function gameLoop(view, bricks, paddle, ball, collision) {
   view.clear();
   console.log(`draw!`);
   view.drawBrick(bricks);
@@ -79,7 +73,7 @@ function gameLoop(
   requestAnimationFrame(() => gameLoop(view, bricks, paddle, ball, collision));
 }
 
-function startGame(view: CanvasView) {
+function startGame(view) {
   //reset displays
   score = 0;
   view.drawInfo(``);
