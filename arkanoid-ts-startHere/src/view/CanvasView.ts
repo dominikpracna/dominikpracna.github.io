@@ -1,7 +1,7 @@
 //Type
-import { Brick } from "~/sprites/brick";
-import { Paddle } from "~/sprites/paddle";
-import { Ball } from "~/sprites/ball";
+import { Brick } from "../sprites/brick";
+import { Paddle } from "../sprites/paddle";
+import { Ball } from "../sprites/ball";
 
 export class CanvasView {
     canvas: HTMLCanvasElement;
